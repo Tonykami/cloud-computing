@@ -29,4 +29,10 @@ How Containerization Contributes to the Development and Deployment Process
 
 # (c)
 <img width="2560" height="1322" alt="image" src="https://github.com/user-attachments/assets/8e608dbb-409c-4c24-8b35-070692d53a47" />
-
+Command Parameter Description: 
+docker run: The core command of Docker, used to create and start a new container from an image. 
+-d (--detach): Runs the container in the background and returns the container ID. This way, the terminal will not be occupied by the container's log output. 
+--name n8n: Specify an easily recognizable name (n8n) for the container to be created in the future, facilitating subsequent management operations such as starting (docker start n8n) and stopping (docker stop n8n). 
+-p 5678:5678 (--publish): Set port mapping. The format is Host Port:Container Port. It maps the port (5678) that the n8n application inside the container listens to to the 5678 port on the host machine. Thus, by accessing the host machine's http://127.0.0.1:5678, we can access the n8n service inside the container. 
+-v ~/.n8n:/home/node/.n8n (--volume): Set up a data volume mount for data persistence. It maps the directory ~/.n8n on the host machine (the .n8n folder under the current user's home directory) to the /home/node/.n8n directory inside the container (the default location where n8n stores workflow, configuration, etc. data). This way, even if the container is deleted, the data of n8n will not be lost. 
+n8nio/n8n: Specify the name of the Docker image to be run. Docker will first search locally; if it cannot find it, it will automatically download the image from the public Docker Hub repository.
