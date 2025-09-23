@@ -25,3 +25,8 @@ How Containerization Contributes to the Development and Deployment Process
 2. **Simplified Deployment:** Operations personnel do not need to manually install Node.js and configure the environment on the server. They only need to obtain the pre-built Docker image and can run the application on any server with Docker installed. This simplifies the deployment process and enhances reliability. 
 3. **Fast Startup and Isolation:** Compared with virtual machines, containers start up extremely quickly, facilitating rapid scaling up and down. Additionally, each container is isolated, meaning that a problem with one application will not affect others. 
 4. **Continuous Integration/Continuous Deployment (CI/CD):** In the CI/CD pipeline, Docker images can be easily utilized for building, testing, and deploying applications, facilitating automation.
+---
+
+# (c)
+<img width="2560" height="1322" alt="image" src="https://github.com/user-attachments/assets/8e608dbb-409c-4c24-8b35-070692d53a47" />
+
